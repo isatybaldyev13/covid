@@ -8,27 +8,51 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-
-    
-    <div class="bg-image">
-     
-    </div>
+    <div class="bg-image"></div>
     <header>
       <h1>COVID-19 Dashboard</h1>
       <div class="search-bar">
         <img src="./img/virus.png" class="search-bar_icon" />
-        <input class="search-bar_input" placeholder="Type a country name..." />
+        <div class="search-bar_input_wrapper">
+          <input
+            class="search-bar_input"
+            placeholder="Type a country name..."
+            id="search_input"
+          />
+          <ul class="country-list" id="search-result">
+ 
+          </ul>
+        </div>
+
         <button class="search-bar_btn">Add country</button>
       </div>
     </header>
     <div class="on-off">
       <p class="on">on</p>
       <p class="off">off</p>
-      </div>
+    </div>
     <main>
       <div class="card">
-        <button class="close-btn"><img src="./img/delete.png"/></button>
-        <div class="card-header">          
+        <button class="close-btn"><img src="./img/delete.png" /></button>
+        <div class="card-header">
+          <img src="https://flagcdn.com/w320/kg.png" />
+          <p>Kyrgyzstan</p>
+        </div>
+        <ul>
+          <li>COVID-19 infections</li>
+          <li>
+            <span>Confirmed </span>
+            <span>200,993</span>
+          </li>
+          <li>
+            <span>Confirmed </span>
+            <span>200,993</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <button class="close-btn"><img src="./img/delete.png" /></button>
+        <div class="card-header">
           <img src="https://flagcdn.com/w320/kg.png" />
           <p>Kyrgyzstan</p>
         </div>
@@ -46,5 +70,6 @@
       </div>
     </main>
     <button class="btn">Reset</button>
+    <script src="./main.js"></script>
   </body>
 </html>

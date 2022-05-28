@@ -52,12 +52,16 @@ header h1{
     height: 30px;
     width: 30px;
 }
+.search-bar_input_wrapper{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    position: relative;
+}
 .search-bar_input{
     height: 100%;
     border: none;
     padding:0 10px;
-    display: flex;
-    flex: 1;
 }
 input:focus{
     outline: none;
@@ -135,13 +139,29 @@ ul li{
     display: flex;
     justify-content: space-between;
 }
-ul li:first-child{
+.card ul li:first-child{
     background-color: #e76f51;
     color: #fff;
     border-radius: 5px;
     padding: 10px;
     margin-top: 10px;
     justify-content: center;
+}
+
+
+.country-list{
+    position: absolute;
+    z-index: 21;
+    background-color: #f8f9fa;
+    top: 40px;
+    width: 100%;
+}
+
+.country-list li{
+    margin-top: 0;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    background-color: #f6f7f9;
 }
 
 
