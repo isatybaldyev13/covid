@@ -130,5 +130,21 @@ ul li:first-child{
     justify-content: center;
 }
 
+.btn-div{
+    display: flex;
+    justify-content: center;  
+       
+}
 
-
+.btn{
+    margin-top: 20px;
+    
+    width: 250px;
+    background-color: white ;
+    border: none;
+    border-radius: 30px;
+    color: #289d8f;
+    font-size: 25px;      
+    padding: 10px 20px;
+    border: solid 7px #ccd2de;
+}
